@@ -1,0 +1,502 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T09:56:40.654Z",
+        "line": 2,
+        "name": "I want to login with registered user",
+        "description": "",
+        "id": "login-with-registered-user;i-want-to-login-with-registered-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3256136600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open browser",
+            "match": {
+              "location": "StepDef.Step.iOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2555130000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo",
+            "match": {
+              "location": "StepDef.Step.openSaucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201886700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I input user \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDef.Step.iInputUser(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152913200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDef.Step.iInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191889000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click the login button",
+            "match": {
+              "location": "StepDef.Step.userClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href\u003d\u0027https://www.saucedemo.com/inventory.html\u0027]\"}\n  (Session info: chrome\u003d118.0.5993.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-EUREFI2\u0027, ip: \u0027192.168.0.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.88 (1d05652f52a5..., userDataDir: C:\\Users\\PAJAK\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e4d99be7b5262fdc2543a50606384158\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027https://www.saucedemo.com/inventory.html\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDef.Step.userSuccesfullyLogin(Step.java:47)\r\n\tat ✽.user succesfully login(file:///C:/Users/PAJAK/IdeaProjects/TestSauceDemo/src/test/resources/Features/LoginWithRegisteredUser.feature:8)\r\n",
+              "duration": 61974700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user succesfully login",
+            "match": {
+              "location": "StepDef.Step.userSuccesfullyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login With Registered User",
+    "description": "",
+    "id": "login-with-registered-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/LoginWithRegisteredUser.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T09:56:47.290Z",
+        "line": 2,
+        "name": "I want to add item to basket",
+        "description": "",
+        "id": "add-to-basket-feature;i-want-to-add-item-to-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1412296200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open browser",
+            "match": {
+              "location": "StepDef.Step.iOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1912372000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo",
+            "match": {
+              "location": "StepDef.Step.openSaucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180874400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I input user \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDef.Step.iInputUser(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147918200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDef.Step.iInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146915800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click the login button",
+            "match": {
+              "location": "StepDef.Step.userClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 560679200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user add item",
+            "match": {
+              "location": "StepDef.Step.userAddItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href\u003d\u0027https://www.saucedemo.com/cart.html\u0027]\"}\n  (Session info: chrome\u003d118.0.5993.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-EUREFI2\u0027, ip: \u0027192.168.0.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.88 (1d05652f52a5..., userDataDir: C:\\Users\\PAJAK\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 889705ca5193044d242fa5e14cc25af0\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027https://www.saucedemo.com/cart.html\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDef.Step.userCanSeeItemInBasket(Step.java:67)\r\n\tat ✽.user can see item in basket(file:///C:/Users/PAJAK/IdeaProjects/TestSauceDemo/src/test/resources/Features/addtobasket.feature:9)\r\n",
+              "duration": 25985900,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user can see item in basket",
+            "match": {
+              "location": "StepDef.Step.userCanSeeItemInBasket()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add to basket feature",
+    "description": "",
+    "id": "add-to-basket-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/addtobasket.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T09:56:51.698Z",
+        "line": 2,
+        "name": "I want to checkout",
+        "description": "",
+        "id": "checkout-feature;i-want-to-checkout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1646056600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open browser",
+            "match": {
+              "location": "StepDef.Step.iOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2059452900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo",
+            "match": {
+              "location": "StepDef.Step.openSaucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208879400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I input user \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDef.Step.iInputUser(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170900800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDef.Step.iInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261851300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click the login button",
+            "match": {
+              "location": "StepDef.Step.userClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1070385500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user add item",
+            "match": {
+              "location": "StepDef.Step.userAddItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281841300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click cart button",
+            "match": {
+              "location": "StepDef.Step.userClickCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 430750900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click checkout button",
+            "match": {
+              "location": "StepDef.Step.userClickCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 734579600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user fill the form",
+            "match": {
+              "location": "StepDef.Step.userFillTheForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309822600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click finish button",
+            "match": {
+              "location": "StepDef.Step.userClickFinishButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href\u003d\u0027https://www.saucedemo.com/checkout-complete.html\u0027]\"}\n  (Session info: chrome\u003d118.0.5993.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-EUREFI2\u0027, ip: \u0027192.168.0.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.88 (1d05652f52a5..., userDataDir: C:\\Users\\PAJAK\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53302}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 20e2f5499d077af290318f4dab319a08\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027https://www.saucedemo.com/checkout-complete.html\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDef.Step.checkoutCompleteWebpageIsShowing(Step.java:101)\r\n\tat ✽.checkout complete webpage is showing(file:///C:/Users/PAJAK/IdeaProjects/TestSauceDemo/src/test/resources/Features/checkout.feature:13)\r\n",
+              "duration": 39977000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "checkout complete webpage is showing",
+            "match": {
+              "location": "StepDef.Step.checkoutCompleteWebpageIsShowing()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout Feature",
+    "description": "",
+    "id": "checkout-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/checkout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T09:56:58.934Z",
+        "line": 2,
+        "name": "I want to login with unregistered",
+        "description": "",
+        "id": "user-failed-login-with-unregistered;i-want-to-login-with-unregistered",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2627213800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open browser",
+            "match": {
+              "location": "StepDef.Step.iOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2857363100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo",
+            "match": {
+              "location": "StepDef.Step.openSaucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 215876800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I input wrong user \"gipari\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gipari\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDef.Step.iInputWrongUser(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153912700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input wrong password \"gipari\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gipari\"",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDef.Step.iInputWrongPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131923600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the login button",
+            "match": {
+              "location": "StepDef.Step.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href\u003d\u0027https://www.saucedemo.com\u0027]\"}\n  (Session info: chrome\u003d118.0.5993.70)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-EUREFI2\u0027, ip: \u0027192.168.0.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002721.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.88 (1d05652f52a5..., userDataDir: C:\\Users\\PAJAK\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 39ffa084ca938dceb43f82e440cf2064\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027https://www.saucedemo.com\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StepDef.Step.userCanTSuccesfullyLogin(Step.java:130)\r\n\tat ✽.user can\u0027t succesfully login(file:///C:/Users/PAJAK/IdeaProjects/TestSauceDemo/src/test/resources/Features/failedloginwithunregisteredl.feature:8)\r\n",
+              "duration": 32980100,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user can\u0027t succesfully login",
+            "match": {
+              "location": "StepDef.Step.userCanTSuccesfullyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User failed login with unregistered",
+    "description": "",
+    "id": "user-failed-login-with-unregistered",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/failedloginwithunregisteredl.feature",
+    "tags": []
+  }
+]
